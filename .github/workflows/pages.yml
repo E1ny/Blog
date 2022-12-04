@@ -6,7 +6,7 @@ on:
       - main # default branch
 env:
   THEME_REPO: tinkink-net/hexo-theme-terminal 
-  THEME_BRANCH: main
+  THEME_BRANCH: master
 
 jobs:
   pages:
