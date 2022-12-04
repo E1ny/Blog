@@ -6,7 +6,7 @@ on:
       - main # default branch
 env:
   THEME_REPO: tinkink-net/hexo-theme-terminal 
-  THEME_BRANCH: master
+  THEME_BRANCH: main
 
 jobs:
   pages:
@@ -28,7 +28,7 @@ jobs:
         with:
           path: node_modules
           key: {{ runner.OS }}-npm-cache
-          restore-keys: |{{ runner.OS }}-npm-cache
+          restore-keys: |${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
       - name: Build
